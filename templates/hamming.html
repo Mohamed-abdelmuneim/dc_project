@@ -1,0 +1,38 @@
+
+{% extends 'base.html' %}
+
+
+
+
+{% block content %}
+<h1 class="text2">Treate Data with Hamming code </h1>
+<br><br>
+
+    <form action="" method="POST">
+    {% csrf_token %}
+    <div class="field" id="searchform">
+        <input type="text" name="numdata" id="searchterm" placeholder="Ex :1010 whithout spaces " />
+        <button type="submit" id="search">Find</button>
+  	</div>
+    </form>
+
+<br><br>
+<div class="hamming_output box">
+    <p>Number Of Original Data is = {{d}}</p>
+    <p>Number Of Parity Bits is = {{r}}</p>
+    <p>Data Sequence = {{ds}}</p>
+
+    <p>Er0 = {{pa_r0}}</p>
+    <p>Er1 = {{pa_r1}}</p>
+    <p>Er2 = {{pa_r2}}</p>
+    <p>Er3 = {{pa_r3}}</p>
+    <p>Er4 = {{pa_r4}}</p>
+    <p>Er5 = {{pa_r5}}</p>
+</div>
+
+
+
+
+
+
+{% endblock content %}

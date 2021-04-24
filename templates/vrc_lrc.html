@@ -1,0 +1,33 @@
+
+{% extends 'base.html' %}
+
+
+
+
+{% block content %}
+<h1 class="text2">VRC & LRC</h1>
+<br><br>
+
+    <form action="" method="POST">
+    {% csrf_token %}
+    <div class="field" id="searchform">
+        <input type="text" name="stream" id="searchterm" placeholder="samples must be saperated by space ex '1010 1100 0010' " />
+        <button type="submit" id="search">Find</button>
+  	</div>
+    </form>
+
+<br><br><br>
+
+<div class="vrc_table lrc_table">
+    <table>
+    {% for i in a %}
+    <tr>
+        {% for j in i %}
+        <td>{{j}}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>                
+</div>
+
+{% endblock content %}

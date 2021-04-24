@@ -1,0 +1,26 @@
+
+{% extends 'base.html' %}
+
+
+
+
+{% block content %}
+<br><br><br>
+
+<div class="container">
+    {% for i in objects %}
+    <div class="card" style="width: 60%;">
+    <div class="card-header">{{i.id}}---- {{i.created}}</div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">name : {{i.name}}</li>
+        <li class="list-group-item">Email : {{i.email}}</li>
+        <li class="list-group-item">Message : {{i.text}}</li>
+    </ul>
+    </div><br><br>
+    {% endfor %}
+</div>
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,94 @@
+body {
+    background-color: #c9ced3 ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Days One', sans-serif;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.308);
+    width: 90%;
+    padding: 20px;
+}
+
+.field {
+    display:flex;
+    position:realtive;
+    margin:5em auto;
+    width:80%;
+  }
+  
+  .field>input[type=text],
+  .field>button {
+    display:block;
+    font:1.2em Myriad Pro;
+  }
+  
+  .field>input[type=text] {
+    flex:1;
+    padding:0.6em;
+    border:0.2em ;
+  }
+  
+  .field>button {
+    padding:0.6em 0.8em;
+    background-color:#272727;
+    color:white;
+    border:none;
+  }
+  .field>button:hover {
+      cursor:pointer;
+  }
+
+table {
+    width: 90%;
+    margin: auto;
+    table-layout: fixed;
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255, 30%);
+}
+
+table td {
+    border: 1px dotted rgb(0, 0, 0);
+    border-collapse: collapse;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.vrc_table td:last-child{
+    background-color: rgba(207, 228, 24, 0.432);
+}
+
+.lrc_table tr:last-child{
+    background-color: rgba(207, 228, 24, 0.432);
+}
+
+.hamming_output p{
+    font-size: 20px;
+}
+
+
+
+.text1 {
+    font-family: 'Julius Sans One', sans-serif;
+}
+.text2 {
+        font-family: 'Reggae One', cursive;
+        background:rgb(255, 255, 255,50%);
+        width: 30%;
+        border-radius: 3px;
+}
+.text3 {
+    font-family: 'Days One', sans-serif;
+}
+
+.box {
+    margin: 60px;
+}
